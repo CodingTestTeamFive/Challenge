@@ -33,7 +33,6 @@ const 사이즈예시 = [[10, 7], [12, 3], [8, 15], [14, 7], [5, 15]]
 
 
 function solution(sizes) {
-    let answer = 0;
     // 일단 각 원소 값 별로 모아서 따로 w,h 각각 리스트에 넣자
     let w = []; 
     let h = []; 
@@ -76,3 +75,8 @@ function solution(sizes) {
 }
 
 console.log(solution(사이즈예시))
+
+
+nowTimes = new Date()
+
+

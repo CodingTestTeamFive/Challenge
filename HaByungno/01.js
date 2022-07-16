@@ -11,13 +11,15 @@
 
 function solution(a, b) {
     let date = String(new Date(`2016-${a}-${b}`))
-        date = date.split(' ')[0].toUpperCase()
-    return date;
+        console.log(date)
+        result = date.split(' ')[0].toUpperCase()
+        // console.log(result)
+    return result;
 }
 
 
 
 console.log(solution(1,31))
-console.log(solution(4,24))
-console.log(solution(12,2))
-console.log(solution(5,7))
+// console.log(solution(4,24))
+// console.log(solution(12,2))
+// console.log(solution(5,7))
