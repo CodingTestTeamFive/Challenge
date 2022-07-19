@@ -1,4 +1,5 @@
 // https://school.programmers.co.kr/learn/courses/30/lessons/12977
+// fail
 
 function solution(nums) {
     var answer = 0;
