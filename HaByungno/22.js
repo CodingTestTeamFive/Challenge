@@ -1,3 +1,5 @@
+// https://school.programmers.co.kr/learn/courses/30/lessons/81301
+
 // 숫자 문자열과 영단어
 
 // 네오와 프로도가 숫자놀이를 하고 있습니다.
@@ -56,17 +58,19 @@ const rules = ["zero", "one", "two", "three", "four", "five", "six", "seven", "e
 // }
 
 function solution(s) {
-    console.log(s);
+    // console.log(s);
+    console.log(s.replace(/[^a-z,A-Z]/g, ''));
     while (s.replace(/[^a-z,A-Z]/g, '')) {
         for (let i = 0; i < rules.length; i++) {
+            // console.log(s);
             s= s.replace(rules[i], i);
         }
     }
-    console.log(s);
+    // console.log(s);
     return parseInt(s);
 }
 
 let 예시 = "23four5six7";
-console.log(solution(예시));
+console.log('답: ',solution(예시));
 
 // 이게 왜 안될까?
